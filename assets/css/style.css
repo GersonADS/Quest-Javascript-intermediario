@@ -3,11 +3,34 @@
     font-size: 62.5%;
 } */
 
-body {
+body 
+{
    font-family: 'Roboto', sans-serif;
 }
 
+h1
+{
+    font-size: 20px;
+}
+
+p
+{
+    font-size: 15px;
+}
 .container
 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    background-image: url('../images/bg-repeat.jpg');
+    background-size: contain;
+}
 
+.container
+.text
+{
+    background-color: red;
+    max-width: 300px;
+    height: 75px;
 }
