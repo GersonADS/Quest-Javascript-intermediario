@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *,
+        *::after,
+        *::before
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container
+        {
+            display: flex;
+            flex-wrap: wrap;
+            min-height: 70vh;
+            align-content: center;
+            justify-content: center;
+            background:#333;
+            border: 1px solid red;
+        }
+
+        .item
+        {
+            background:#E83845;
+            height: 500px;
+            border: 1px solid black;
+        }
+
+        .item:first-child
+        {
+            flex:1 400px;
+            flex-shrink: 1;
+        }
+
+        .item:nth-child(4){
+            border: 5px solid #E83845;
+            flex: 2 0 1000px ;
+        }   
+
+        img
+        {
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <img src="https://cdnb.artstation.com/p/assets/images/images/060/903/127/4k/kaws-55.jpg?1679568380" alt="">
+        </div>
+        <div class="item">
+            <img src="https://cdnb.artstation.com/p/assets/images/images/061/867/817/large/kaws-44.jpg?1681828037" alt="">
+        </div>
+        <div class="item">
+            <img src="https://cdna.artstation.com/p/assets/images/images/061/183/234/large/kaws-19.jpg?1680188753" alt="">
+        </div>
+        <div class="item">
+            <img src="https://cdna.artstation.com/p/assets/images/images/060/860/198/4k/kaws-02105-1194702174-steampunkai-1girl-a-steampunk-style-female-warrior-steampunk-style-armor-steampunk-style-gloves-steampunk-style-bo.jpg?1679478352" alt="">
+        </div>
+        <div class="item">
+            <img src="https://cdnb.artstation.com/p/assets/images/images/061/209/957/large/kaws-20.jpg?1680246807" alt="">
+        </div>
+        <div class="item">
+            <img src="https://cdna.artstation.com/p/assets/images/images/061/979/532/large/kaws-7777.jpg?1682057492" alt="">
+        </div>
+        <div class="item">
+            <img src="https://cdna.artstation.com/p/assets/images/images/060/873/196/4k/kaws-2.jpg?1679499416" alt="">
+        </div>
+        <div class="item">
+            <img src="https://cdnb.artstation.com/p/assets/images/images/061/914/847/large/kaws-55.jpg?1681917627" alt="">
+        </div>
+    </div>
+</body>
+</html>
