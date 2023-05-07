@@ -1,8 +1,50 @@
+
 @media (max-width: 1100px){
+    
+    p 
+    {
+        font-size: 1.5rem;
+    }
 
     .container
     {
         flex-direction: column;
+        padding: 10px 10px;
+    }
+    
+    .container
+    .text
+    {
+        text-align: center;
+    }
+    
+    .container
+    .text
+    p{
+        font-size: 1.5rem;
+    }
+    
+    .form
+    {
+        width: 100%;
     }
 
+}
+
+@media (max-width: 384px){
+    p 
+    {
+        font-size: 1rem;
+    }
+    .text-area
+    {
+        height: 150px;
+    }
+}
+
+@media (max-width: 375px){
+    .text-area
+    {
+        height: 10px;
+    }
 }
