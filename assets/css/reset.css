@@ -5,7 +5,8 @@
     box-sizing: border-box;
 }
 
-input:focus
+input:focus,
+textarea:focus
 {
   outline: none;
 }

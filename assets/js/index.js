@@ -1,8 +1,16 @@
 const $Button = document.querySelector('.btn');
 
-let $InputChecking = document.querySelectorAll('.check-input')[1];
+let $InputChecking = document.querySelectorAll('.check-input');
 
-$InputChecking.addEventListener('input',()=>{
+let $inputReact = undefined;
+
+$InputChecking.forEach(addEventListener('click',(item)=>{
+
+    let $inputReact = item.target;
+
+}));
+
+$inputReact.addEventListener('input',()=>{
     
     let index = 0;
     let $CheckInput = document.querySelectorAll('.check-input');
@@ -12,17 +20,11 @@ $InputChecking.addEventListener('input',()=>{
 
         if(!item.value){
 
-            errorAlert(index);
+            errorInput(index);
 
         }else {
 
-            let $selectAlert = document.querySelectorAll('.alert')[index];
-            
-            $selectAlert.style.display = 'none'
-
-            let $inputConfirmed = document.querySelectorAll('.check-input')[index];
-            
-            $inputConfirmed.style.border = '2px solid #3CCC87'
+            correctInput(index);
         }
 
         index++;
@@ -31,7 +33,17 @@ $InputChecking.addEventListener('input',()=>{
 });
 
 
-function errorAlert(index) {
+function correctInput(index) {
+    let $selectAlert = document.querySelectorAll('.alert')[index];
+
+    $selectAlert.style.display = 'none';
+
+    let $inputConfirmed = document.querySelectorAll('.check-input')[index];
+
+    $inputConfirmed.style.border = '2px solid #3CCC87';
+}
+
+function errorInput(index) {
     let $selectAlert = document.querySelectorAll('.alert')[index];
 
     $selectAlert.style.display = 'inline';
