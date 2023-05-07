@@ -57,9 +57,58 @@ p
 
 .form 
 {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 46px 50px;
     background-color: #fff;
     width:685px;
     height: 94vh;
     flex-grow: 1;
+}
+.form
+.inputs
+.alert
+{
+    /* margin-left: 2px; */
+    font-size: 1.20rem;
+}
+
+.inputs
+input 
+{
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid black;
+    padding: 2.05rem;
+}
+
+.inputs:nth-child(4)
+.alert
+{
+    margin-left: 8px;
+}
+
+.text-area
+{
+    height: 238px;
+}
+
+.caution
+{
+    margin-top: 2px;
+    margin-left: -18px;
+    color: black;
+}
+
+.btn 
+{
+    background-color: #3CCC87;
+    font-size: 2.4rem;
+    margin-top: 10px;
+    margin-left: -5px;
+    color: white;
+    width: 100%;
+    height: 150px;
+    padding: 25px;
 }

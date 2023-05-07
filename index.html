@@ -26,30 +26,32 @@
         <form class="form" action="none">
             <div class="inputs">
 
-                <input type="text" name="name" id="Dname" placeholder="Nome Completo *">
+                <input type="text" name="name" id="Dname" placeholder="Nome Completo *"> <br>
+                <span class="alert">campo obrigatório</span>
 
             </div>
 
             <div class="inputs">
 
-                <input type="email" name="email" id="Demail" placeholder="Email *">
-
+                <input type="email" name="email" id="Demail" placeholder="Email *"><br>
+                <span class="alert">campo obrigatório</span>
             </div>
 
             <div class="inputs">
 
-                <input type="tel" name="phone" id="Dphone" placeholder="Telefone *">
-
+                <input type="tel" name="phone" id="Dphone" placeholder="Telefone *"><br>
+                <span class="alert">campo obrigatório</span>
             </div>
             <div class="inputs">
 
-                <input type="text" name="" id="" placeholder="Messagem *">
-
+                <input type="text" class="text-area" name="" id="Dmessage" placeholder="Messagem *"><br>
+                <span class="alert">campo obrigatório</span>
             </div>
             <p class="caution">
-                *Campos obrigatórios
+                *campos obrigatórios
             </p>
-            <input type="button" value="send">
+            <input type="button" class="btn" value="Enviar">
+            <span class="alert"></span>
         </form>
 
     </div>
