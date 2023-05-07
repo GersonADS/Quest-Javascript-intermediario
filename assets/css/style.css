@@ -17,15 +17,6 @@ p
     margin-left: -3px;
 }
 
-/* textarea
-{
-    width: 100%;
-    border: 1px solid black;
-    border-radius: 1rem;
-    padding: 10px 10px;
-    resize: none;
-} */
-
 .container
 {
     display: flex;
@@ -61,12 +52,6 @@ p
     flex-grow: 1;
 }
 
-.form
-.inputs
-.input-box
-{
-    position: relative;
-}
 
 .form
 .inputs
@@ -74,6 +59,7 @@ p
 {
     font-size: 1.20rem;
     display: none;
+    color: #F52E2E;
 }
 
 .inputs
