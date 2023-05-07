@@ -1,39 +1,66 @@
 const $Button = document.querySelector('.btn');
 
-let $InputChecking = document.querySelectorAll('')
+let $InputChecking = document.querySelectorAll('.check-input');
 
-$Button.addEventListener('click',()=>{
+let $targetInput = undefined;
+
+$InputChecking.forEach(addEventListener('click',(item)=>{
+
+    let $inputReact = item.target;
+
+    let idCatch = $inputReact.id;
+
+    $targetInput = document.querySelector(`#${idCatch}`);
+
+    checkInput();
     
-    let index = 0;
-    let $CheckInput = document.querySelectorAll('.check-input');
 
-    $CheckInput.forEach((item)=>{
+}));
 
 
-        if(!item.value){
 
-            let $selectAlert = document.querySelectorAll('.alert')[index];
-            
-            $selectAlert.style.display = 'inline'
 
-            let $inputConfirmed = document.querySelectorAll('.check-input')[index];
-            
-            $inputConfirmed.style.border = '2px solid #F52E2E'
+function checkInput() {
+    $targetInput.addEventListener('input', () => {
 
-        }else {
+        let index = 0;
+        let $CheckInput = document.querySelectorAll('.check-input');
 
-            let $selectAlert = document.querySelectorAll('.alert')[index];
-            
-            $selectAlert.style.display = 'none'
+        $CheckInput.forEach((item) => {
 
-            let $inputConfirmed = document.querySelectorAll('.check-input')[index];
-            
-            $inputConfirmed.style.border = '2px solid #3CCC87'
-        }
 
-        index++;
+            if (!item.value) {
+
+                errorInput(index);
+
+            } else {
+
+                correctInput(index);
+            }
+
+            index++;
+        });
+
     });
+}
 
-});
+function correctInput(index) {
+    let $selectAlert = document.querySelectorAll('.alert')[index];
 
+    $selectAlert.style.display = 'none';
+
+    let $inputConfirmed = document.querySelectorAll('.check-input')[index];
+
+    $inputConfirmed.style.border = '2px solid #3CCC87';
+}
+
+function errorInput(index) {
+    let $selectAlert = document.querySelectorAll('.alert')[index];
+
+    $selectAlert.style.display = 'inline';
+
+    let $inputConfirmed = document.querySelectorAll('.check-input')[index];
+
+    $inputConfirmed.style.border = '2px solid #F52E2E';
+}
 
