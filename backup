@@ -17,15 +17,6 @@ p
     margin-left: -3px;
 }
 
-/* textarea
-{
-    width: 100%;
-    border: 1px solid black;
-    border-radius: 1rem;
-    padding: 10px 10px;
-    resize: none;
-} */
-
 .container
 {
     display: flex;
@@ -70,6 +61,27 @@ p
 
 .form
 .inputs
+.input-box
+.text-message
+{
+    position: absolute;
+    left: 3.5%; 
+    top: 50%;
+    font-size: 2.25rem;
+    transform: translateY(-50%);
+    color: #A8A8A8;
+}
+
+.form
+.inputs:nth-child(4)
+.input-box
+.text-message
+{
+    /* top: 16%; */
+}
+
+.form
+.inputs
 .alert
 {
     font-size: 1.20rem;
@@ -77,8 +89,7 @@ p
 }
 
 .inputs
-input ,
-.text-area
+input 
 {
     position: relative;
     width: 100%;
@@ -97,7 +108,6 @@ input ,
 .text-area
 {
     height: 238px;
-    resize: none;
 }
 
 .caution

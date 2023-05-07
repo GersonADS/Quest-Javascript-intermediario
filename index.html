@@ -28,8 +28,7 @@
             <div class="inputs">
 
                 <div class="input-box">
-                    <input type="text" name="name" id="Dname">
-                    <span class="text-message">Nome completo *</span>
+                    <input type="text" name="name" id="Dname" class="check-input" placeholder="Nome completo *">
                 </div> 
                 <span class="alert">campo obrigatório</span>
 
@@ -38,8 +37,7 @@
             <div class="inputs">
 
                 <div class="input-box">
-                    <input type="email" name="email" id="Demail">
-                    <span class="text-message">Email *</span>
+                    <input type="email" name="email" id="Demail" class="check-input" placeholder="Email *">
                 </div>
                 <span class="alert">campo obrigatório</span>
             </div>
@@ -47,17 +45,18 @@
             <div class="inputs">
 
                 <div class="input-box">
-                    <input type="tel" name="phone" id="Dphone" >
-                    <span class="text-message">Telefone *</span>
+                    <input type="tel" name="phone" id="Dphone" class="check-input" placeholder="Telefone *">
                 </div>
                 <span class="alert">campo obrigatório</span>
 
             </div>
             <div class="inputs">
 
-                <div class="input-box">
-                  <input type="text" class="text-area" name="" id="Dmessage">  
-                  <span class="text-message">Messagem *</span>
+                <div class="input-box">   
+                    <!-- <input type="text" height="200" name="" id="Dmessage" class="text-area" placeholder="Messagem *"> -->
+               
+                    <textarea name="text" id="Dmessage" class="text-area" placeholder="Messagem *" cols="30" rows="10"></textarea>
+
                 </div>
                 <span class="alert">campo obrigatório</span>
                 
@@ -70,6 +69,9 @@
         </form>
 
     </div>
+
+    <script src="./assets/js/index.js"></script>
+
 </body>
 
 </html>
