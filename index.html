@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 
 <body>
@@ -26,26 +27,40 @@
         <form class="form" action="none">
             <div class="inputs">
 
-                <div class="input-box"><input type="text" name="name" id="Dname" placeholder="Nome completo *"></div> 
+                <div class="input-box">
+                    <input type="text" name="name" id="Dname">
+                    <span class="text-message">Nome completo *</span>
+                </div> 
                 <span class="alert">campo obrigatório</span>
 
             </div>
 
             <div class="inputs">
 
-                <input type="email" name="email" id="Demail" placeholder="Email *">
+                <div class="input-box">
+                    <input type="email" name="email" id="Demail">
+                    <span class="text-message">Email *</span>
+                </div>
                 <span class="alert">campo obrigatório</span>
             </div>
 
             <div class="inputs">
 
-                <input type="tel" name="phone" id="Dphone" placeholder="Telefone *">
+                <div class="input-box">
+                    <input type="tel" name="phone" id="Dphone" >
+                    <span class="text-message">Telefone *</span>
+                </div>
                 <span class="alert">campo obrigatório</span>
+
             </div>
             <div class="inputs">
 
-                <input type="text" class="text-area" name="" id="Dmessage" placeholder="Messagem *">
+                <div class="input-box">
+                  <input type="text" class="text-area" name="" id="Dmessage">  
+                  <span class="text-message">Messagem *</span>
+                </div>
                 <span class="alert">campo obrigatório</span>
+                
             </div>
             <p class="caution">
                 *campos obrigatórios
